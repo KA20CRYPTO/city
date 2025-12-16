@@ -10,7 +10,7 @@ import pandas as pd
 FIREBASE_DATABASE_URL = "https://city-9baf7-default-rtdb.firebaseio.com/cities.json"
 # WARNING: This secret is the master key to your database. Keep it secure!
 # Find this secret under Project Settings -> Service Accounts -> Database secrets.
-FIREBASE_DATABASE_SECRET = "YOUR_DATABASE_SECRET_HERE" 
+FIREBASE_DATABASE_SECRET = "RXhuy413mcmzU17J4ba1RAZ9ZGzFb58r5X7NZF25" 
 
 # Admin Credentials (Hardcoded)
 ADMIN_EMAIL = "kaaysha.rao@gmail.com"

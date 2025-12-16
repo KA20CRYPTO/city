@@ -107,7 +107,7 @@ def check_login(email, password):
         st.session_state['user_email'] = email
         st.success("Login Successful! Redirecting...")
         time.sleep(1) # Give time for the message to show
-        st.experimental_rerun()
+        st.rerun()
     else:
         st.error("Invalid Email or Password.")
         st.session_state['logged_in'] = False
@@ -117,7 +117,7 @@ def logout():
     st.session_state['logged_in'] = False
     st.session_state['user_email'] = None
     st.success("Logged out successfully.")
-    st.experimental_rerun()
+    st.rerun()
 
 # --- 3. Streamlit UI Pages ---
 
@@ -209,7 +209,7 @@ def admin_panel():
             with col_buttons[1]:
                 if st.form_submit_button("Delete Record", type="secondary"):
                     delete_city_data(selected_city_id)
-                    st.experimental_rerun() # Rerun to update the selectbox after deletion
+                    st.rerun() # Rerun to update the selectbox after deletion
 
     else:
         st.info("No data available to edit or delete.")
